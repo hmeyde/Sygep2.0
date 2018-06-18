@@ -17,7 +17,7 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
 
-    @Size(min = 8, message = "Minimum password length: 8 characters")
+    @Size(min = 4, message = "Minimum password length: 4 characters")
     private String password;
 
     @ElementCollection(fetch = FetchType.EAGER)

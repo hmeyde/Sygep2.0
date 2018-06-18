@@ -1,5 +1,7 @@
 package mr.mbconsulting.Sygep.security;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;
@@ -18,5 +20,8 @@ public class JwtTokenFilterConfigurer extends SecurityConfigurerAdapter<DefaultS
     JwtTokenFilter customFilter = new JwtTokenFilter(jwtTokenProvider);
     http.addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class);
   }
+
+
+
 
 }

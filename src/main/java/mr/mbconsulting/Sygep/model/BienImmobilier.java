@@ -10,4 +10,8 @@ public class BienImmobilier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    private String string_id;
+    private String type;
+    private String location;
 }
