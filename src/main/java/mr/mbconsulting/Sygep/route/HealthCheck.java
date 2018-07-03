@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@RestController("/api/healthcheck")
 public class HealthCheck {
 
-    //@PostMapping
+    @PostMapping
     public String getHelthCheck(){
         return String.format("Health check");
 
